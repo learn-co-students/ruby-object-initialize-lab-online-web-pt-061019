@@ -1,12 +1,8 @@
 class Dog 
   
-  def initialize(name, breed)
+  def initialize(name, breed = "Mutt")
     @name = name
-    if breed == nil 
-      @breed = "Mutt"
-    else 
-      @breed = breed
-    end
+    @breed = breed
   end
   
   attr_accessor :name, :breed
